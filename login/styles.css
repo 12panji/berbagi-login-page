@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden; /* Menghindari scroll bar */
+}
+
+.background-video {
+    position: fixed; /* Menempatkan video di belakang */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menutupi seluruh layar */
+    z-index: -1; /* Memastikan video di belakang kontainer */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparansi */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    position: absolute; /* Menggunakan absolute untuk memposisikan secara relatif terhadap body */
+    top: 50%; /* Menempatkan di tengah secara vertikal */
+    left: 50%; /* Menempatkan di tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Offset dari tengah */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+input {
+    width: calc(100% - 30px); /* Mengatur lebar input untuk menghindari tumpang tindih dengan padding */
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #5cb85c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+}
+
+button {
+    width: 100%; /* Memastikan tombol memenuhi lebar kontainer */
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+}
+
+span {
+    display: block;
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4cae4c;
+    text-decoration: underline;
+}
